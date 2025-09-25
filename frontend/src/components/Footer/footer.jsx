@@ -31,7 +31,7 @@ export default function Footer() {
       </section>
 
       <div className="End">
-        <img src="../../../public/images/frei-logo.png" alt="frei-logo" />
+        <img src="/images/frei-logo.png" alt="frei-logo" />
       </div>
     </footer>
   );
