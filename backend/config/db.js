@@ -7,7 +7,9 @@ const connection = await mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASS || '1234',
-  database: process.env.DB_NAME || 'feira'
+  database: process.env.DB_NAME || 'feira',
+  port: process.env.DB_PORT || 3306,
+  ssl: { rejectUnauthorized: false }
 });
 
 export { connection };
