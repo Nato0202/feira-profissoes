@@ -26,7 +26,7 @@ function Sobre() {
 
         <section className="sobre-mapa">
           <h2>Mapa:</h2>
-          <img src="../../../public/images/mapa-frei.png" alt="mapa-frei" />
+          <img src="/images/mapa-frei.png" alt="mapa-frei" />
         </section>
       </main>
 
