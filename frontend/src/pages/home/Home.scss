@@ -1,0 +1,44 @@
+main{
+  width: 100vw;
+  @media (max-width:768px) {
+    min-width: 97vw;
+    max-width: 468px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .apresentacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; // usa 100% do container
+
+      .video-antes{
+        margin: 0;
+        padding: 0;
+
+        .video {
+          width: 100vw;   // ocupa a largura da tela
+          height: 500px;  // altura fixa
+          object-fit: cover; // mantém proporção e cobre toda a área
+          border-bottom: 2px solid white;
+        }
+      }
+
+      
+
+      @media (max-width: 768px) {
+        .video {
+          width: 100vw;
+          max-height: 300px;
+        }
+      }
+    }
+    .spacement{
+      min-height: 50px;
+    }
+  }
+}

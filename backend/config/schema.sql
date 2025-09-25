@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS feira;
+USE feira;
+
+CREATE TABLE IF NOT EXISTS alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS visitantes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    escolaridade VARCHAR(100),
+    interesses TEXT,
+    previsao_chegada VARCHAR(100),
+    email VARCHAR(255),
+    como_soube VARCHAR(255),
+    telefone VARCHAR(20),
+    ja_foi_aluno BOOLEAN DEFAULT 0,
+    cpf VARCHAR(20) UNIQUE,
+    qr_code VARCHAR(50) UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,12 @@
+{
+    "lastfair": [
+      {
+          "src": "public/images/apresentacao.png",
+          "alt": "Imagem 1"
+      },
+      {
+          "src": "public/images/footer.png",
+          "alt": "Imagem 2"
+      }
+    ]
+  }

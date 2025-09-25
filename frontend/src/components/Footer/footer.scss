@@ -1,0 +1,113 @@
+.footer {
+    padding-top: 55px;
+    margin-top: 55px;
+    border-top: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    background-image: url(../../../public/images/footer.png);
+
+    .exhibitors{
+        .logos{
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            
+            #pwiimg{
+                width: 160px;
+                height: 70px;
+                
+            }
+            #santanderimg{
+                width: 160px;
+                height: 70px;
+                
+            }
+        }
+    }
+        
+        .contact{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .contact-items{
+                margin-top: -10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .contact-item{
+                    font-size: 15px;
+
+                    #txt{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .End{
+            width: 100vw;
+            border-top:3px solid white;
+            background-color: white;
+        }
+    
+
+     @media (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        background-image: url(../../../public/images/footer.png);
+
+        .exhibitors{
+            .logos{
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                
+                #pwiimg{
+                    width: 150px;
+                    height: 85px;
+                    border-radius: 10px;
+                }
+                #santanderimg{
+                    width: 150px;
+                    height: 85px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        .contact{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .contact-items{
+                margin-top: -10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .contact-item{
+                    font-size: 15px;
+
+                    #txt{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .End{
+            width: 97vw;
+            border-top:3px solid white;
+            background-color: white;
+        }
+    }
+}
